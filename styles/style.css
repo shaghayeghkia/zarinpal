@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1170px;
     margin: auto;
     padding: 21px 0 7px;
     background-color: rgba(255, 255, 255, 0.72);
@@ -20,9 +19,13 @@
     top: 0;
     transition: all 0.3s ease;
   }
+  .social-media-icon{
+    max-width: 25px;
+  }
   
   .logo {
     margin: 11px 28px;
+    max-width: 90px;
   }
   
   .header-ul {
@@ -40,20 +43,7 @@
     text-decoration: none;
     color: #303030;
   }
-  
-  .header-ul > li:last-child a {
-    color: #28457b;
-    background-color: rgba(232, 239, 254, 0.6);
-    border-radius: 20px;
-    padding: 10px 27px;
-    margin-right: 20px;
-    font-family: YekanBakhBold;
-  }
-  
-  .header-ul > li:last-child a:hover {
-    background-color: #fbf6d9;
-  }
-  
+ 
   .more-menu {
     display: flex;
   }
@@ -135,10 +125,11 @@
   }
   
 .banner{
-    width: 1050px;
+    /* width: 1050px; */
     padding: 124px 60px 80px;
-    background-image: linear-gradient(135deg,#21254e,#2b4a83);
-    border-radius: 20px;
+    background-color: #09636C;
+    background-image: url(/image/website-homepage-screenshot-collage-900x600.jpg);
+    /* border-radius: 20px; */
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -159,18 +150,17 @@
 }
 
 .banner-image img {
-    width: 500px;
+    width: 900px;
 
 }
 .banner-button {
   margin-top: 60px;
 }
 
-.register {
+/* .register {
   font-size: 1rem;
   font-family: YekanBakhBold;
   color: #000;
-  background-color: #ffd900;
   padding: 6px 14px;
   border: none;
   border-radius: 10px;
@@ -187,7 +177,7 @@
   border: none;
   border-radius: 10px;
   text-decoration: none;
-}
+} */
 
 .go-down{
     width: 100%;
@@ -229,6 +219,7 @@
 }
 
 .section-text{
+  background-color: palegoldenrod;
   margin: 30px 0;
   width: 530px;
 }
@@ -273,7 +264,6 @@
   font-size: 0.9rem;
   font-family: iranyekanwebmedium;
   color: #000;
-  background: #ffd900;
   padding: 6px 14px;
   border: none;
   border-radius: 10px;
@@ -383,12 +373,13 @@
 
 
 .start-box{
-  width: 1170px;
+  /* width: 1170px; */
   height: 220px;
   margin: auto;
   margin-top: 50px;
-  border: 1px solid silver;
-  border-radius: 20px;
+  background-color: #000;
+  /* border: 1px solid silver;
+  border-radius: 20px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,12 +388,14 @@
 
 
 .start-box h4 {
+  color: white;
   font-family: YekanBakhHeavy;
   font-size: 1.7rem;
 }
 
 .start-box p {
   font-family: YekanBakhMedium;
+  color: white;
   font-size:1.4rem;
   color: #747480;
   margin-top: 10px;
@@ -415,11 +408,16 @@
   min-height: 28px;
   line-height: 28px;
   padding: 4px 14px;
-  background-color: #ffd900;
-  color: #000;
+  color: #ffffff;
   border-radius: 10px;
-
 }
+
+.start-box a{
+  text-decoration: none;
+  background-color: #09636C;
+  color: white;
+}
+
 
 .support{
   width: 1110px;
@@ -451,7 +449,7 @@
 }
 
 footer{
-  display: flex;
+  display: block;
   justify-content: space-between;
   width: 1170px;
   margin: auto;
@@ -460,7 +458,7 @@ footer{
 footer .footer-links{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  width: calc((100% - 330px));
+  /* width: calc((100% - 330px)); */
   margin-bottom: 50px;
   padding: 0 10px;
 }
@@ -479,6 +477,7 @@ footer .footer-links{
 
 .social-media div {
   display: flex;
+  background-color: red;
   margin-top: 20px;
 }
 
@@ -503,6 +502,7 @@ footer .footer-links{
 
 .footer-links ul {
   list-style: none;
+  background-color: #2e82ff;
 }
 
 .footer-links a {
